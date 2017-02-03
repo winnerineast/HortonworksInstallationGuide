@@ -4,7 +4,7 @@
 
 ## Environment
 - one Macbook Pro (CPU i7,Memory 16GB, MacOS Sierra), abbr. MBP
-- one Surface Pro3(CPU i5,Memory 8GB, Windows 10 Home), abbr. SP3
+- one Surface Pro3(CPU i5,Memory 8GB, Windows 8.1), abbr. SP3
 
 ## Big Data System Deployment Goal
 - Phase1: setup Hortonworks HDP sandbox in both MBP and SP3 and the user could access them from either MBP or SP3 in both hosts and VMs.
