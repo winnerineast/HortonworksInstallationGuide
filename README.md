@@ -30,5 +30,5 @@
 - 3.6 Use >passwd to change root password locally.
 - 3.7 In host machine (either MBP or SP3), open cmd window and "ssh root@127.0.0.1 -p 2222" to login HDP VM remotely with root/hadoop again. And change password also.
 - 3.8 In HDP VM, "ambari-admin-password-reset" to update Ambari admin password and if Ambari doesn't restart automatically, restart ambari service, keyin "ambari-agent restart".
-- 3.9 In HDP VM, edit /etc/sysconfig/network-scripts/ifcfg-enp0s8. set ONBOOT=yes, BOOTPROTO=NONE, IPADDR0=192.168.1.103 (same segment with host IP) and PREFIX0=24.
+- 3.9 In HDP VM, edit /etc/sysconfig/network-scripts/ifcfg-enp0s8. set ONBOOT=yes, BOOTPROTO=static, IPADDR0=192.168.1.103 (same segment with host ip) and GATEWAY=192.168.1.254 and BROADCAST=192.168.0.255(same ip as host ip).
 - 4.0 In HDP VM, "service network restart" to apply for change of 3.9.
